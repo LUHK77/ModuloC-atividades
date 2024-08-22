@@ -10,24 +10,20 @@ import java.util.Scanner;
  *
  * @author Aluno
  */
-public class ex3 {
+public class ex4 {
     
-    public static int fatora(int a) {
-       int fatorial = a;
-     
-       for(int i = a-1; i > 0;i--){
-       fatorial *= i;
-       }
-       return fatorial;
+    public static int converteCelcius(int c) {
+      int  F = (c * 9/5) + 32;
+      return F;
     }
-    
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        int num;
-        System.out.println("Digite seu numero que quer fatora");
-        num = teclado.nextInt();
+        int c;
+        System.out.println("Digite os graus em Celcius para converte para Fahrenheit");
+        c = teclado.nextInt();
         
-        int resultado = fatora(num);
-        System.out.println(resultado);
+        int f = converteCelcius(c);
+        System.out.println(f);
+        
     }
 }
